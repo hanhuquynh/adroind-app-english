@@ -28,7 +28,7 @@ public class VocabularyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vocabulary);
-        new LoadVocabularyAsyncTask("http://192.168.52.103/android/getVocab.php").execute();
+        new LoadVocabularyAsyncTask("http://192.168.52.104/android/getVocab.php").execute();
         rcListVocabulary = findViewById(R.id.rcVocabulary);
 
         adapter = new VocabularyAdapter(VocabularyActivity.this, vocabularies);

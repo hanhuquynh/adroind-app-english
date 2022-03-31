@@ -30,7 +30,7 @@ public class GrammarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grammar);
-        new GrammarActivity.LoadGrammarAsyncTask("http://192.168.52.103/android/getGrammar.php").execute();
+        new GrammarActivity.LoadGrammarAsyncTask("http://192.168.52.104/android/getGrammar.php").execute();
         rcListGrammar = findViewById(R.id.rcGrammar);
 
         adapter = new GrammarAdapter(GrammarActivity.this, grammars);

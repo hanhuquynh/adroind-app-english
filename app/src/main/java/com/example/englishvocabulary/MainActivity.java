@@ -6,11 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btnVocab;
-    private Button btnGrammar;
-    private Button btnTense;
+    private ImageButton btnVocab;
+    private ImageButton btnGrammar;
+    private ImageButton btnTense;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,9 +20,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initView() {
-        btnVocab = (Button) findViewById(R.id.btnVocab);
-        btnGrammar = (Button) findViewById(R.id.btnGrammar);
-        btnTense = (Button) findViewById(R.id.btnTense);
+        btnVocab = (ImageButton) findViewById(R.id.btnVocab);
+        btnGrammar = (ImageButton) findViewById(R.id.btnGrammar);
+        btnTense = (ImageButton) findViewById(R.id.btnTense);
 
         btnVocab.setOnClickListener(this);
         btnGrammar.setOnClickListener(this);
