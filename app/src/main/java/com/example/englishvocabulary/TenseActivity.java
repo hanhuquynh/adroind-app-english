@@ -28,7 +28,7 @@ public class TenseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tense);
-        new TenseActivity.LoadTenseAsyncTask("http://192.168.52.104/android/getTense.php").execute();
+        new TenseActivity.LoadTenseAsyncTask("http://192.168.160.1/android/getTense.php").execute();
         rcListTense = findViewById(R.id.rcTense);
 
         adapter = new TenseAdapter(TenseActivity.this, tenses);
